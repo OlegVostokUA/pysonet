@@ -1,7 +1,8 @@
 from rest_framework import generics, permissions, views, response
-from src.profiles.models import UserNet
+
 from .models import Follower
 from .serializers import ListFollowerSerializer
+from ..profiles.models import UserNet
 
 
 class ListFollowerView(generics.ListAPIView):
